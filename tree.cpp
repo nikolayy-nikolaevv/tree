@@ -6,8 +6,10 @@ using namespace std;
 int main() 
 {
    int n, a, i, j;
+   do {
    cout<<"Enter n:";cin>>n;
-     
+   } while (n<2); //prevents bad input
+   
    for(j=1; j<=n-1; j++) cout<<" "; //prints
    cout<<"*"<<endl;                 //the first line
    a=n-2;
